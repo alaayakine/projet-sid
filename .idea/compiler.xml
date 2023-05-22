@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="radar" />
+        <module name="radar-service" />
+        <module name="immatriculation-service" />
+        <module name="gateway" />
+        <module name="eureka-discouvry" />
+        <module name="infraction-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customer-service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="customer-service" options="-parameters" />
+      <module name="eureka-discouvry" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="immatriculation-service" options="-parameters" />
+      <module name="infraction-service" options="-parameters" />
+      <module name="radar-service" options="-parameters" />
+    </option>
+  </component>
+</project>
